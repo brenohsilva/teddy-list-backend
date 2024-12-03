@@ -3,18 +3,22 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 
+import { ClientModule } from './client/client.module';
+import { Client } from './client/entities/client.entity';
+
 @Module({
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
       host: 'localhost',
-      port: 3306,
-      username: 'root',
+      port: 5432,
+      username: 'postgres',
       password: 'admin',
       database: 'teddylist',
-      entities: [],
+      entities: [Client],
       synchronize: true,
     }),
+    ClientModule,
   ],
   controllers: [AppController],
   providers: [AppService],
