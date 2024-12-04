@@ -1,4 +1,4 @@
-# Como Executar a Aplicação NestJS
+# Teddy List Backend
 
 Este guia explica como configurar e executar a aplicação NestJS em sua máquina local.
 
@@ -104,11 +104,6 @@ Certifique-se de que você tenha os seguintes itens instalados:
 1. **Executar Testes Unitários**
    ```bash
    npm run test
-   ```
-
-2. **Executar Testes de Cobertura**
-   ```bash
-   npm run test:cov
    ```
 
 ---
